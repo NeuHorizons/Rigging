@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: lamp.ma
-//Last modified: Fri, Jan 31, 2025 08:16:14 PM
+//Last modified: Tue, Feb 04, 2025 10:10:40 AM
 //Codeset: 1252
 requires "fbxmaya" "2020.3.6";
 file -rdi 1 -ns "lamp_model" -rfn "lamp_modelRN" -op "fbx" -typ "FBX" "C:/Users/camhe/Downloads/lamp_model.fbx";
@@ -12,18 +12,18 @@ fileInfo "application" "maya";
 fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
-fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "8200B5AB-4FC7-D556-D8A4-FDB62C5E6331";
+fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
+fileInfo "UUID" "8A381B4C-49E9-A260-3494-F8AB208BE716";
 createNode transform -s -n "persp";
 	rename -uid "F6BCDF86-4C48-E801-E46D-93B22982A47E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 69.651832660838437 45.315162309573338 -16.877865005685187 ;
-	setAttr ".r" -type "double3" -28.538352730223757 457.39999999962481 0 ;
+	setAttr ".t" -type "double3" 41.794254270672859 28.212795421900701 30.507547642893748 ;
+	setAttr ".r" -type "double3" -16.538352730217444 418.1999999995902 1.5089285992333661e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "DA9E6B95-492C-0B07-FE29-BEB1407BB9FA";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 92.221356527397887;
+	setAttr ".coi" 66.706679923296775;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -216,7 +216,7 @@ createNode joint -n "joint_04_Jnt" -p "joint_03_Jnt";
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
 	setAttr ".jo" -type "double3" 179.91508454765236 0.068012558214868665 78.161867802083634 ;
-	setAttr ".pa" -type "double3" 2.5432110472809641e-14 -4.0543142408670349e-15 -1.2722218725854067e-14 ;
+	setAttr ".pa" -type "double3" 2.5432110472809644e-14 -4.0543142408670349e-15 -1.2722218725854067e-14 ;
 	setAttr ".radi" 0.86557375162049599;
 createNode joint -n "joint_05_Jnt" -p "joint_04_Jnt";
 	rename -uid "19C0DEAD-4D51-BA88-C628-75A9A17A3745";
@@ -264,9 +264,9 @@ createNode parentConstraint -n "joint_04_Jnt_parentConstraint1" -p "joint_04_Jnt
 		1.0408340855860843e-17 ;
 	setAttr ".tg[0].tor" -type "double3" -2.5456861493432607e-14 4.0750856856251325e-15 
 		90.306422214359316 ;
-	setAttr ".lr" -type "double3" 2.5432110472809641e-14 -4.0543142408670349e-15 -1.2722218725854067e-14 ;
+	setAttr ".lr" -type "double3" 2.5452202477785925e-14 2.4089052149829578e-15 5.3504764052945073e-31 ;
 	setAttr ".rst" -type "double3" 16.505187554392371 -7.1054273576010019e-15 -5.6378512969246231e-18 ;
-	setAttr ".rsrr" -type "double3" 2.5451620100830093e-14 -4.0908098634326595e-15 -9.0859867370373687e-31 ;
+	setAttr ".rsrr" -type "double3" 2.5451620100830093e-14 -4.0908098634326603e-15 -9.0859867370373687e-31 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "joint_03_Jnt_parentConstraint1" -p "joint_03_Jnt";
 	rename -uid "337A23FC-4B88-2D57-B91E-728497607335";
@@ -286,7 +286,7 @@ createNode parentConstraint -n "joint_03_Jnt_parentConstraint1" -p "joint_03_Jnt
 	setAttr ".tg[0].tot" -type "double3" 0 -1.1657341758564144e-15 8.6736173798840355e-19 ;
 	setAttr ".tg[0].tor" -type "double3" 2.8879684988523221e-14 3.0053756931485349e-14 
 		90.306422214359301 ;
-	setAttr ".lr" -type "double3" -2.8879684988523221e-14 -2.9921502639922585e-14 6.3597987678139843e-15 ;
+	setAttr ".lr" -type "double3" -2.1919115612390665e-14 -2.824099195650705e-14 1.2719878872749735e-14 ;
 	setAttr ".rst" -type "double3" 15.244424175287454 -8.8817841970012523e-16 -1.7347234759768071e-18 ;
 	setAttr ".rsrr" -type "double3" -2.8876578978092105e-14 -3.0057904804124403e-14 
 		6.3597650866092649e-15 ;
@@ -310,7 +310,7 @@ createNode parentConstraint -n "joint_02_Jnt_parentConstraint1" -p "joint_02_Jnt
 		2.6020852139652106e-18 ;
 	setAttr ".tg[0].tor" -type "double3" -2.308386952405943e-14 -2.3804463944078513e-14 
 		90.30642221435933 ;
-	setAttr ".lr" -type "double3" 2.2959629106814762e-14 2.375476777718063e-14 3.1872592961675598e-14 ;
+	setAttr ".lr" -type "double3" 2.0238763969156525e-14 3.0345721912010302e-14 3.1879096171015746e-14 ;
 	setAttr ".rst" -type "double3" 2.8142186083055507 1.8405388592427287e-16 3.0704605524789481e-16 ;
 	setAttr ".rsrr" -type "double3" 2.3096293565783896e-14 2.3736131714593931e-14 2.5511629192987525e-14 ;
 	setAttr -k on ".w0";
@@ -331,11 +331,11 @@ createNode parentConstraint -n "joint_01_Jnt_parentConstraint1" -p "joint_01_Jnt
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tor" -type "double3" -1.5861134080238415e-14 -6.3859574463759689e-15 
 		90.306422214359316 ;
-	setAttr ".lr" -type "double3" 9.5416640443905487e-15 1.5902773407317578e-14 3.1805546814635176e-15 ;
+	setAttr ".lr" -type "double3" 1.272221872585407e-14 6.3611093629270351e-15 7.0622500768802573e-31 ;
 	setAttr ".rsrr" -type "double3" 9.5416640443905487e-15 1.5902773407317578e-14 3.1805546814635176e-15 ;
 	setAttr -k on ".w0";
 createNode fosterParent -n "lamp_modelRNfosterParent1";
-	rename -uid "87F99409-4E15-5B45-C7BB-3E83F80EC2FF";
+	rename -uid "5CCE7727-4E64-6EF9-D431-ACB16E09B3CB";
 createNode parentConstraint -n "head_geo_parentConstraint1" -p "lamp_modelRNfosterParent1";
 	rename -uid "8635A815-46E5-B1A6-2C27-99BB3138CB86";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "joint_04_CtrlW0" -dv 1 -min 0 -at "double";
@@ -443,7 +443,7 @@ createNode parentConstraint -n "lower_arm_geo_parentConstraint1" -p "lamp_modelR
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -0.026586233189086927 4.9701386435565311 -0.00932249620404162 ;
 	setAttr ".tg[0].tor" -type "double3" 90.00000000436934 -89.955266464870874 -40.684618733999372 ;
-	setAttr ".lr" -type "double3" 2.302721589379586e-12 -1.510763473695177e-14 3.1805546814632131e-15 ;
+	setAttr ".lr" -type "double3" 2.2899993706537315e-12 0 0 ;
 	setAttr ".rst" -type "double3" 1.7347234759768071e-18 -8.8817841970012523e-16 -1.7763568394002505e-15 ;
 	setAttr ".rsrr" -type "double3" 2.302721589379586e-12 -1.510763473695177e-14 3.1805546814632131e-15 ;
 	setAttr -k on ".w0";
@@ -518,23 +518,23 @@ createNode mesh -n "base_geoShapeDeformed" -p "lamp_modelRNfosterParent1";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "CC7B7DFB-476F-7628-F078-6FB96254316E";
+	rename -uid "C1FDEC8C-4C9D-89D5-0E0D-F4B34A227646";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "B3FA5327-4DCE-36B0-4A61-1991BC81C160";
+	rename -uid "4ED1A573-432C-3071-DBF6-DCBC0806C17E";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "5557D698-4E17-05C7-CE7D-479CF6B04213";
+	rename -uid "200AFFFD-4702-717F-297D-EC92912F1FCE";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "5615A8C0-437F-9D9B-EC3E-F2B46B05A4B7";
+	rename -uid "73216BAE-40D0-224F-AA2F-638E01C2DEA7";
 	setAttr ".cdl" 4;
-	setAttr -s 5 ".dli[1:4]"  5 2 3 4;
+	setAttr -s 5 ".dli[1:4]"  1 2 3 4;
 	setAttr -s 5 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "08F6C2B8-4AA3-5067-589E-A99A7A467AD9";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C60016A8-41E9-2EF8-5908-A9A54226AAB3";
+	rename -uid "F6EF03A1-4E5B-D840-96B4-1AAE7953C461";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "9AD91C2F-4416-3ADF-9847-E29E05814B0F";
 	setAttr ".g" yes;
@@ -2624,6 +2624,7 @@ createNode displayLayer -n "Joint_Ctrl_layer";
 	setAttr ".do" 3;
 createNode displayLayer -n "Geo_layer";
 	rename -uid "2C036284-4EC1-9FCA-2679-3B81ABB56677";
+	setAttr ".v" no;
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 4;
 select -ne :time1;
